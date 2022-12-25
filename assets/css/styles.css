@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+
+:root {
+  --font-family: "Roboto", sans-serf;
+  --normal-font: 400;
+  --bold-font: 700;
+  --bolder-font: 900;
+  --bg-color: #fcfcfc;
+  --primary-color: #4756df;
+  --primary-shadow: #8b8eaf;
+  --secondary-shadow: #a17a69;
+  --bottom-margin: 0.5rem;
+  --bottom-margin-2: 1rem;
+  --line-height: 1.7rem;
+  --transition: 0.3s;
+}
+nav{
+  position:sticky;
+  top: 0;
+  z-index: 100;
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
+  padding: 1.5rem 3.5rem;
+  background-color: var(--bg-color);
+  box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+
+  font-size:18px;
+  font-family: "Lucida Console", "Courier New", monospace;
+
+}
+
+nav h1 {
+  color: var(--primary-color);
+  
+}
+
+nav a {
+  color: var(--primary-color);
+  transition: var(--transition);
+  text-decoration:none;
+}
+nav a:hover {
+  color: rgb(3, 22, 32);
+  
+}
+
+nav ul {
+  display: flex;
+  gap: 1.9rem;
+}
+
+nav ul li {
+  font-weight: var(--bold-font);
+}
+
+.burger{
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+  border: 0;
+  background-color:transparent;
+
+}
+
+/*  about me */
+.about-me {
+  background-color: rgb(82, 82, 155);
+  padding: 1rem 6rem;
+  color:white;
+  border-radius: 42px;
+  font-family: "Lucida Console", "Courier New", monospace;
+  
+}
+
+.about-me h2 {
+  margin-bottom: var(--bottom-margin);
+  text-align: center;
+}
+
+.about-me p {
+  line-height: var(--line-height);
+  padding: 0.4rem;
+ 
+}
+/* hero */
+.hero{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 6rem;
+  color: var(--primary-color);
+  background-color:rgb(51, 104, 153);
+  border-radius: 42px;
+  margin-bottom:40px;
+  color:white;
+  font-family: "Lucida Console", "Courier New", monospace;
+} 
+.hero:hover{
+  transition:0.25s;
+  transform: scale(0.98); 
+}
+.hero-img{
+  height: 26rem;
+  width:22rem;
+  border-radius:26px;
+  box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+  margin-left:auto;
+  margin-right: auto;
+  display: block;
+
+
+}
+.about-me:hover{
+  transition:0.25s;
+  transform: scale(0.98);
+}
+
+.desc-me{
+  width: 25rem;
+  padding: 0.625rem;
+  border-radius: 12px;
+  box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+  font-family: "Lucida Console", "Courier New", monospace;
+  color:white;
+}
+
+
+.title-me h1 {
+  margin-bottom: var(--bottom-margin);
+   font-family: "Lucida Console", "Courier New", monospace;
+   color:white;
+  
+}
+
+.desc-me p {
+  line-height: var(--line-height);
+  padding: 0.3rem 0;
+  
+  
+}
+.contacting{
+  font-size:26px;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.tech-img{
+  height: 7rem;
+  width:7rem;
+  border-radius:26px;
+  box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+  margin-left:auto;
+  margin-right: 0pc;
+  display: block;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.social{
+  height: 14rem;
+  width:14rem;
+  padding-right: 15rem;
+  border-radius:22px;
+  flex-direction: row;
+
+}
+.social:hover{
+  box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+  transition: 0.5s;
+  background-color:grey;
+}
+.projects {
+  background-color: var(--bg-color);
+  padding: 32px 0;
+  margin-top: 2rem;
+  font-family: "Lucida Console", "Courier New", monospace;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-img {
+  width: 45%;
+  height: 40%;
+  border-radius:20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.projects-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.projects-title{
+  justify-content: center;
+  align-items: center;
+}
+
+/* Tablets/Mobile Phones */
+
+@media screen and (max-width: 720px) {
+ nav{
+  padding: 1.5rem 1rem;
+ }
+
+  .about-me {
+    padding: 1rem 1rem;
+  }
+
+  .hero {
+    padding: 1rem 1rem;
+  }
+
+  .hero-img {
+    height: 20rem;
+    width: 15rem;
+  }
+
+  .desc-me {
+    width: 20rem;
+  }
+
+  .title-me h1 {
+    font-size: 1.5rem;
+  }
+
+  .desc-me p {
+    font-size: 0.8rem;
+  }
+
+  .projects {
+    padding: 1rem 1rem;
+  }
+
+  .project-img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .projects-container {
+    flex-direction: column;
+  }
+
+  .projects-title {
+    margin-bottom: 1rem;
+  }
+
+  .projects-title h1 {
+    font-size: 1.5rem;
+  }
+
+  .projects-title p {
+    font-size: 0.8rem;
+  }
+
+  .projects-title a {
+    font-size: 0.8rem;
+  }
+
+  .projects-title a:hover {
+    color: var(--primary-color);
+  }
+
+  .projects-title a:active {
+    color: var(--primary-color);
+  }
+
+  .projects-title a:visited {
+    color: var(--primary-color);
+  }
+
+  .projects-title a:focus {
+    color: var(--primary-color);
+  }
+
+  .projects-title a:link {
+    color: var(--primary-color);
+  }
+
+  .projects-title a:visited {
+    color: var(--primary-color);
+  }
+
+  .projects-title a:active {
+    color: var(--primary-color);
+  }
+
+  .projects-title a:focus {
+    color: var(--primary-color);
+  }
+
+  .projects-title a:hover {
+    color: var(--primary-color);
+  }
+
+  .projects-title a:link {
+    color: var(--primary-color);
+  }
+
+  .projects-title a:visited {
+    color: var(--primary-color);
+  }
+
+  .projects-title a:active {
+    color: var(--primary-color);
+  }
+
+  .projects-title a:focus {
+    color: var(--primary-color);
+  }
+
+  .projects-title a:hover {
+    color: var(--primary-color);
+  }
+
+  .projects-title a:link {
+    color: var(--primary-color);
+  }
+
+  .projects-title a:visited {
+    color: var
+
+  }
+}
