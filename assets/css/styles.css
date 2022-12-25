@@ -72,9 +72,13 @@ nav ul li {
   color:white;
   border-radius: 42px;
   font-family: "Lucida Console", "Courier New", monospace;
-  
+  transition:0.25s;
+  transform: scale(1);
 }
-
+.socials h1{
+  margin-bottom: var(--bottom-margin);
+  text-align: center;
+}
 .about-me h2 {
   margin-bottom: var(--bottom-margin);
   text-align: center;
@@ -97,19 +101,22 @@ nav ul li {
   margin-bottom:40px;
   color:white;
   font-family: "Lucida Console", "Courier New", monospace;
+  transition:0.25s;
+  transform: scale(1);
 } 
 .hero:hover{
   transition:0.25s;
   transform: scale(0.98); 
 }
 .hero-img{
-  height: 26rem;
-  width:22rem;
-  border-radius:26px;
+  height: 22rem;
+  width:22Rem;
+  border-radius:50%;
   box-shadow: 0px 2px 15px 2px var(--primary-shadow);
   margin-left:auto;
   margin-right: auto;
   display: block;
+
 
 
 }
@@ -196,9 +203,10 @@ nav ul li {
 }
 
 .projects-title{
-  justify-content: center;
-  align-items: center;
+  text-align:center;
+
 }
+
 
 /* Tablets/Mobile Phones */
 
@@ -325,4 +333,10 @@ nav ul li {
     color: var
 
   }
+}
+.contactings{
+  font-size:26px;
+  font-family: "Lucida Console", "Courier New", monospace;
+  color:black;
+  text-align:center;
 }
