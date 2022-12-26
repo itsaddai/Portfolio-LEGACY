@@ -343,6 +343,7 @@ nav ul li{
 }
 
 
+
 nav ul.show{
   transform: translateX(0);
   
@@ -353,6 +354,9 @@ nav ul.show{
   flex-direction:column;
   gap: 0;
   text-align:center;
+}
+.hero-img{
+  margin-top:6rem;
 }
 
   }
