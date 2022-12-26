@@ -55,15 +55,7 @@ nav ul li {
   font-weight: var(--bold-font);
 }
 
-.burger{
-  color: var(--primary-color);
-  font-size: 1.5rem;
-  cursor: pointer;
-  display: none;
-  border: 0;
-  background-color:transparent;
 
-}
 
 /*  about me */
 .about-me {
@@ -170,7 +162,8 @@ nav ul li {
   width:14rem;
   padding-right: 15rem;
   border-radius:22px;
-  flex-direction: row;
+  flex-direction: COLUMN;
+  text-align:center;
 
 }
 .social:hover{
@@ -210,7 +203,7 @@ nav ul li {
 
 /* Tablets/Mobile Phones */
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1242px) {
  nav{
   padding: 1.5rem 1rem;
  }
@@ -330,10 +323,40 @@ nav ul li {
   }
 
   .projects-title a:visited {
-    color: var
+    color: var;
+  }
+
+    nav ul {
+position:fixed;
+background:var(--bg-color);
+flex-direction: column;
+top: 86px;
+left: 10%;
+width: 80%;
+text-align: center;
+transform: translateX(120%);
+transition: transform 0.5s ease-in;
+
+    }
+nav ul li{
+  margin: 8px;
+}
+
+
+nav ul.show{
+  transform: translateX(0);
+  
+}
+
+.hero{
+  margin-top: -3rem;
+  flex-direction:column;
+  gap: 0;
+  text-align:center;
+}
 
   }
-}
+
 .contactings{
   font-size:26px;
   font-family: "Lucida Console", "Courier New", monospace;
