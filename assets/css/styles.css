@@ -408,4 +408,11 @@ nav ul.show{
   font-family: "Lucida Console", "Courier New", monospace;
   color:rgb(61, 58, 58);
   text-align:center;
+  
+}
+
+html{
+  scroll-behavior: smooth;
+
+
 }
